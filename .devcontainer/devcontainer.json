@@ -1,0 +1,37 @@
+{
+  // Name this configuration
+  "name": "Pair-Programming Codespace",
+  // Use the base codespace image
+  "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
+
+  "remoteUser": "codespace",
+  "overrideCommand": false,
+  // Add the IDs of extensions you want installed when the container is created.
+  "customizations": {
+      "vscode": {
+          "extensions": [
+            "ms-ceintl.vscode-language-pack-pt-br",
+            "ms-python.autopep8",
+            "ms-python.python",
+            "ms-vscode.cpptools",
+            "ms-vscode.hexeditor",
+            "ms-vsliveshare.vsliveshare",
+            "redhat.java",
+            "vscjava.vscode-java-debug",
+            "vsls-contrib.gitdoc",
+            "esbenp.prettier-vscode",           // Auto formatting
+            "dbaeumer.vscode-eslint",           // Linting (JS/TS support)
+            "eamodio.gitlens",                  // Git insights
+            "streetsidesoftware.code-spell-checker", // Spell checking
+            "oderwat.indent-rainbow"            // Indentation clarity
+          ]
+      }
+  },
+     "postCreateCommand": "echo '# Writing code upon codespace creation!'  >> codespace.md",
+     "forwardPorts": [
+        8080 /* http-server */
+    ],
+    "remoteEnv": {
+        "TZ": "UTC"
+  }
+}
