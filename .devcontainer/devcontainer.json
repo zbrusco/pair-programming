@@ -27,7 +27,7 @@
           ]
       }
   },
-     "postCreateCommand": "echo '# Writing code upon codespace creation!'  >> codespace.md",
+     "postCreateCommand": "npm install -g http-server",
      "forwardPorts": [
         8080 /* http-server */
     ],
