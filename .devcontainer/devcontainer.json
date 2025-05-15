@@ -27,7 +27,7 @@
           ]
       }
   },
-     "postCreateCommand": "npm install -g http-server",
+     "postCreateCommand": "npm install -g http-server && echo 'alias http-server=\"http-server -c-1\"' >> ~/.bashrc",    // Install http-server and set alias to disable cache by default
      "forwardPorts": [
         8080 /* http-server */
     ],
