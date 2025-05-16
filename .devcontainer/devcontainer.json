@@ -21,7 +21,6 @@
             "vsls-contrib.gitdoc",
             "esbenp.prettier-vscode",           // Auto formatting
             "dbaeumer.vscode-eslint",           // Linting (JS/TS support)
-            "eamodio.gitlens",                  // Git insights
             "streetsidesoftware.code-spell-checker", // Spell checking
             "oderwat.indent-rainbow"            // Indentation clarity
           ]
