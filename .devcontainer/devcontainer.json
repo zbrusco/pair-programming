@@ -1,0 +1,26 @@
+{
+  "name": "Pair-Programming Codespace",
+  "image": "mcr.microsoft.com/vscode/devcontainers/universal:latest",
+  "remoteUser": "codespace",
+  "overrideCommand": false,
+  // Add the IDs of extensions you want installed when the container is created.
+  "customizations": {
+      "vscode": {
+          "extensions": [
+            "ms-vsliveshare.vsliveshare",                                  // Live share
+            "esbenp.prettier-vscode",                                      // Auto formatting
+            "dbaeumer.vscode-eslint",                                      // Linting (JS/TS support)
+            "streetsidesoftware.code-spell-checker",                       // Spell checking
+            "streetsidesoftware.code-spell-checker-portuguese-brazilian",  // Spell checking PT-br
+            "oderwat.indent-rainbow"                                       // Indentation clarity
+          ]
+      }
+  },
+     "postCreateCommand": "npm install -g http-server && echo 'alias http-server=\"http-server -c-1\"' >> ~/.bashrc",    // Install http-server and set alias to disable cache by default
+     "forwardPorts": [
+        8080 /* http-server */
+    ],
+    "remoteEnv": {
+        "TZ": "America/Sao_Paulo"
+  }
+}
